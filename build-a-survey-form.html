@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">The purpose of this survey is to learn from you and your preferred means of transportation. Thanks!</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Your name" required>
+      <br>
+      <br>
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" required placeholder="e.g. myemail@email.com">
+      <br>
+      <br>
+      <label for="number" id="number-label">Number</label>
+      <input id="number" type="number" min="18" max="50" placeholder="A number between 18 and 50">
+      <br>
+      <br>
+      <select id="dropdown">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="fish">Fish</option>
+        <option value="hamster">Hamster</option>
+      </select>
+      <br>
+      <br>
+      <fieldset>
+        <legend>What's your preferred means of trasnportation?</legend>
+        <input type="radio" id="bus" name="fav_transport" value="bus">
+        <label for="bus">Bus</label><br>
+        <input type="radio" id="car" name="fav_transport" value="car">
+        <label for="car">Car</label><br>
+        <input type="radio" id="motorcycle" name="fav_transport" value="motorcycle">
+        <label for="motorcycle">Motorcycle</label><br>
+        <input type="radio" id="train" name="fav_transport" value="train">
+        <label for="train">Train</label>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>How do you get from one site to another?</legend>
+        <input type="checkbox" id="bus-option" name="bus-option" value="bus-option">
+        <label for="bus-option"> I travel by bus</label>
+        <br>
+        <input type="checkbox" id="car-option" name="car-option" value="car-option">
+        <label for="car-option"> I travel by car</label>
+        <br>
+        <input type="checkbox" id="motorcycle-option" name="motorcycle-option" value="motorcycle-option">
+        <label for="motorcycle-option"> I ride a motorcycle</label>
+        <br>
+        <input type="checkbox" id="train-option" name="train-option" value="train-option">
+        <label for="train-option"> I take the train</label>
+        <br>
+      </fieldset>
+      <br>
+      <label for="textbox">Additional comments:</label>
+      <textarea id="textbox" name="textbox" rows="4" cols="50"></textarea>
+      <br>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
